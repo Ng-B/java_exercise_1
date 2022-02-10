@@ -1,3 +1,9 @@
+bin/
+
+out/
+
+.idea/
+
 # Compiled class file
 *.class
 
