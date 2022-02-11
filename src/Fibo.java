@@ -22,7 +22,6 @@ public class Fibo implements Command {
         //FIBONACCI
         System.out.println("" + displayFibonacci(num));
 
-
         return true;
     }
 }
