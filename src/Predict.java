@@ -46,7 +46,7 @@ public class Predict implements Command{
             StringJoiner sentence = new StringJoiner(" ");
             sentence.add(word);
 
-
+            // 20 words iteration
             for (int j = 0; j < 19; j++) {
 
                 List<String> next = new ArrayList<String>();
@@ -66,7 +66,7 @@ public class Predict implements Command{
             System.out.println(sentence);
 
         } catch (IOException e) {
-            System.out.println("Unreadable file: " + e.getClass() + " " + e.getMessage());
+            System.out.println("Unreadable file: " + path);
             return false;
         }
         return true;
